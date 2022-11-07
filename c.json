@@ -1,0 +1,29 @@
+{
+	"Cmd": "./Beta-Tunnel-GFW start --uc ",
+	"Client": true,         //客户端模式
+	"Server": false,        //服务端模式
+	"Debug": false,         //调试模式
+	"Dns": true,            //继承服务端DNS
+	"Udp": false,           //是否启用UDP（客户端S5的UDP转发服务）
+	"Global": false,        //全局模式（不用管，勿改）
+	"Http": false,          //是否启用http代理
+	"Host": "0.0.0.0",      //监听IP，0.0.0.0表示所有IP可连
+	"Port": "1080",         //s5端口
+	"PassWord": "",         //s5密码
+	"ServerConfig": "服务端ip:1080",
+	"Local": false,         //本机运行
+	"Test": false,          //测试
+	"Tun": [                //监听IP：端口 - 落地IP：端口
+		"0.0.0.0:65500 - 落地IP:业务端口",
+		"0.0.0.0:65501 - 落地IP:业务端口",
+		"0.0.0.0:65502 - 落地IP:业务端口",
+		"0.0.0.0:65503 - 落地IP:业务端口",
+		"0.0.0.0:65504 - 落地IP:业务端口",
+	],
+	"TcpTun": null,
+	"UdpTun": null,
+	"ReverseProxyHost": "0.0.0.0",
+	"ReverseProxyPort": 0,
+	"Socks5": false,       //S5 代理开关（客户→客户端→服务端，出口IP是服务端；注意，开启此功能很容易被扫，谨慎使用）
+	"Api": ""              //web相关
+}
