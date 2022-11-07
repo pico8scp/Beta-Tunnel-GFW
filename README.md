@@ -11,7 +11,7 @@
 服务端启动命令：./Beta-Tunnel-GFW -s start --udp  
   
 Beta-Tunnel-GFW-s.service 【是服务端的进程保护】    
-Beta-Tunnel-GFW-c.service 【是客户但的进程保护】  
+Beta-Tunnel-GFW-c.service 【是客户端的进程保护】  
 将文件放到/usr/lib/systemd/system目录下  
 
 //客户端停止服务：systemctl stop Beta-Tunnel-GFW-c  
