@@ -1,0 +1,12 @@
+[Unit]
+Description=gs_socks client
+After=network.target
+
+[Service]
+Type=simple
+# 进程退出立即重启
+Restart=always
+
+ExecStart=/root/Beta-Tunnel-GFW start --uc
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
