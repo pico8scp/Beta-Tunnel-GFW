@@ -1,4 +1,7 @@
 # Beta-Tunnel-GFW  
+仅在centos7.6-7.9环境下测试  
+
+
 将Beta-Tunnel-GFW与c.json放入root目录并赋予777权限  
 按照使用需求修改c.json配置文件  
 "ServerConfig"填写服务端IP：1080  
@@ -8,6 +11,8 @@
   
 Beta-Tunnel-GFW-s.service 【是服务端的进程保护】    
 Beta-Tunnel-GFW-c.service 【是客户但的进程保护】  
+将文件放到/usr/lib/systemd/system目录下  
+
 //客户端停止服务：systemctl stop Beta-Tunnel-GFW-c  
 //服务端停止服务：systemctl stop Beta-Tunnel-GFW-s  
   
@@ -18,4 +23,4 @@ Beta-Tunnel-GFW-c.service 【是客户但的进程保护】
 //查看服务端实时运行日志：journalctl -f -u Beta-Tunnel-GFW-s -o cat  
   
 
-飞机：t.me/DNZSD
+飞机：https://t.me/DNZSD
